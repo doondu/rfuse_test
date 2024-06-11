@@ -1,0 +1,70 @@
+seq-write-4kb: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.37-28-g3ed8e
+Starting 32 processes
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+seq-write-4kb: Laying out IO file (1 file / 1024MiB)
+
+seq-write-4kb: (groupid=0, jobs=32): err= 0: pid=8696: Wed May 29 16:33:52 2024
+  write: IOPS=115k, BW=447MiB/s (469MB/s)(32.0GiB/73238msec); 0 zone resets
+    clat (usec): min=6, max=55383, avg=232.63, stdev=384.19
+     lat (usec): min=7, max=55383, avg=232.74, stdev=384.20
+    clat percentiles (usec):
+     |  1.00th=[   20],  5.00th=[   83], 10.00th=[  116], 20.00th=[  141],
+     | 30.00th=[  155], 40.00th=[  174], 50.00th=[  202], 60.00th=[  221],
+     | 70.00th=[  237], 80.00th=[  255], 90.00th=[  351], 95.00th=[  474],
+     | 99.00th=[  570], 99.50th=[  644], 99.90th=[ 7963], 99.95th=[ 8029],
+     | 99.99th=[ 8029]
+   bw (  KiB/s): min=297352, max=1293722, per=100.00%, avg=483912.67, stdev=7176.59, samples=4401
+   iops        : min=74338, max=323429, avg=120978.12, stdev=1794.14, samples=4401
+  lat (usec)   : 10=0.02%, 20=1.15%, 50=1.65%, 100=5.10%, 250=70.05%
+  lat (usec)   : 500=18.85%, 750=2.82%, 1000=0.04%
+  lat (msec)   : 2=0.02%, 4=0.06%, 10=0.23%, 20=0.01%, 50=0.01%
+  lat (msec)   : 100=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=3, max=23701, avg=242.44, stdev=384.37
+    sync percentiles (usec):
+     |  1.00th=[   18],  5.00th=[  109], 10.00th=[  133], 20.00th=[  151],
+     | 30.00th=[  165], 40.00th=[  190], 50.00th=[  208], 60.00th=[  223],
+     | 70.00th=[  237], 80.00th=[  255], 90.00th=[  420], 95.00th=[  486],
+     | 99.00th=[  586], 99.50th=[  660], 99.90th=[ 7963], 99.95th=[ 7963],
+     | 99.99th=[ 8029]
+  cpu          : usr=0.39%, sys=86.10%, ctx=402782153, majf=0, minf=716
+  IO depths    : 1=112.5%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,8388608,0,1048544 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=447MiB/s (469MB/s), 447MiB/s-447MiB/s (469MB/s-469MB/s), io=32.0GiB (34.4GB), run=73238-73238msec
